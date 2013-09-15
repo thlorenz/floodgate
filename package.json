@@ -1,6 +1,6 @@
 {
   "name": "floodgate",
-  "version": "0.1.0",
+  "version": "0.1.1",
   "description": "Throttles a stream to pass one value per given interval.",
   "main": "index.js",
   "scripts": {
@@ -19,7 +19,12 @@
     "nave": "~0.4.3",
     "tap": "~0.4.3"
   },
-  "keywords": [ "throttle", "stream", "interval", "timeout" ],
+  "keywords": [
+    "throttle",
+    "stream",
+    "interval",
+    "timeout"
+  ],
   "author": {
     "name": "Thorsten Lorenz",
     "email": "thlorenz@gmx.de",
