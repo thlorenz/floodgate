@@ -37,6 +37,10 @@ gate.pipe(process.stdout);
  */
  ```
 
+## Similar modules
+
+- [throttle](https://github.com/TooTallNate/node-throttle) passes data through at `n` bytes per second
+
 ## License
 
 MIT
