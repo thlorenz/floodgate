@@ -12,6 +12,8 @@ gate.pipe(process.stdout);
 'hello world'.split('').forEach(gate.write.bind(gate));
 ```
 
+![demo](https://github.com/thlorenz/floodgate/raw/master/assets/floodgate.gif)
+
 ## Status
 
 Nix, Nada, Nichevo, Nothing --> go away!
