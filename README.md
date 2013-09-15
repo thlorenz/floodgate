@@ -4,7 +4,12 @@
 Throttles a stream to pass one value per given interval.
 
 ```js
-// TODO
+var floodgate = require('../');
+
+var gate = floodgate({ interval: 200 });
+gate.pipe(process.stdout);
+
+'hello world'.split('').forEach(gate.write.bind(gate));
 ```
 
 ## Status
