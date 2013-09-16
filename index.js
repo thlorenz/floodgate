@@ -13,9 +13,9 @@ util.inherits(Floodgate, Transform);
  * Creates a transform stream that will delay passing values through according to the given interval.
  *
  * Note:
- *  Passing and interval of 0 is useful in order to keep any streams in your pipe chain from blocking the 
+ *  Passing and interval of 0 is useful in order to keep any streams in your pipe chain from blocking the
  *  event loop.
- * 
+ *
  * @name Floodgate
  * @function
  * @param opts {Object} typical TransformStream options (like highWaterMark) and one additional:
@@ -32,9 +32,10 @@ function Floodgate (opts) {
 
 Floodgate.prototype._transform = function (chunk, encoding, cb) {
   var self = this;
-  setTimeout(passThru, this._interval);
+  this._timer = setTimeout(passThru, this._interval);
   function passThru() {
     self.push(chunk);
+    clearTimeout(self._timer);
     cb();
   }
 }
