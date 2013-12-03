@@ -1,6 +1,6 @@
 {
   "name": "floodgate",
-  "version": "0.1.1",
+  "version": "0.1.2",
   "description": "Throttles a stream to pass one value per given interval.",
   "main": "index.js",
   "scripts": {
