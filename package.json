@@ -16,8 +16,8 @@
   "homepage": "https://github.com/thlorenz/floodgate",
   "dependencies": {},
   "devDependencies": {
-    "nave": "~0.4.3",
-    "tap": "~0.4.3"
+    "tap": "~0.4.3",
+    "nave": "~0.4.5"
   },
   "keywords": [
     "throttle",
